@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
 
     <div style="max-width: 1920px; margin: 0;padding: 0;box-sizing: border-box;overflow-x: hidden; min-height: 100vh;
                 background-image:url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/BG%402x.png);
@@ -129,7 +140,7 @@
                                         <div style="background-color: #F58220; width: 5rem;height: 0.2rem;"></div>
                                     </div>
                                 </div>
-                                <div id="video" style="display: none;justify-content: space-around; border-radius: 25px;">
+                                <div id="video" style="display: none;justify-content: space-around; border-radius: 25px; ">
                                     <iframe src="https://player.vimeo.com/video/666134897?h=52322d2d7c" max-width="700" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen
                                             style="padding-bottom: 1rem; border-radius: 15px;"></iframe>
                                 </div>
@@ -140,27 +151,31 @@
                 <div style="background-color: #F58220; width: 100%; height: 2rem;"></div>
                 <!--VideoBlock-->
                 <!--E-Book Block-->
-                <div style="background-image: url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/BG-Ebook.png);
-                            border: #005C46 2rem;
-                            border-radius: 15px;
-                            box-shadow: 0px 3px 30px 5px rgba(0, 0, 0, 0.5);
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-around;
-                            align-items: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;
-                            width: 100%;
-                            height: 320px;
-                            max-width: 800px;
-                            margin: 5% auto 5%;">
+                <div    class="blockE-Book"
+                        style="background-image: url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/BG-Ebook.png);
+                                border: 0.4rem solid #005C46;
+                                border-radius: 25px;
+                                box-shadow: 0px 3px 30px 5px rgba(0, 0, 0, 0.5);
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                align-items: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                width: 100%;
+                                height: 320px;
+                                max-width: 800px;
+                                margin: 5% auto 5% auto;
+                                flex-direction: row;
+                                ">
                     <!--E-book image-->
                         <img src="https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/ImagemE-Book.png" alt="Capa E-Book" style="height: 200px;width: 140px;border-radius: 15px;">
-                        <div style="background-color: #F58220;width: 0.3rem;height: 8rem;border-radius: 20px;margin: 0.5%;"></div>
+                        <div    class="containerOrange"
+                                style="background-color: #F58220;width: 0.3rem;height: 8rem;border-radius: 20px;margin: 0.5%; "></div>
                         <div style="display: flex;flex-wrap: wrap;flex-direction: column;">
                             <h3 style="color:#F58220;padding: 2%;font-size: 1.2rem;text-align: center;font-weight: 200;">Clique no botão<br>para baixar o e-book</h3>
-                            <div id="hoverButtonEbook"
+                            <div        id="hoverButtonEbook"
                                         style="width: 220px;   height: 60px;
                                         background-color: #005C46;
                                         border-radius: 12rem;
@@ -391,8 +406,9 @@
         //VideoButton
         //ShowVideo
         function showDivContentVideo(){
-            video.style.display = displayFlex;
             video.style.transition = "all 0.2s"
+            video.style.display = displayFlex;
+            
         }
 
         let showVideo = document.querySelector ('#videoButton');
@@ -454,4 +470,11 @@
             button.style.fontSize = "20px";
         }
         //NavBarButton
+        var elem = document.createElement('link');
+            elem.rel = 'stylesheet'
+            elem.href = 'https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/style.css';
+            document.head.appendChild(elem);
+        //PuxarCSS
     </script>
+    </body>
+    </html>
