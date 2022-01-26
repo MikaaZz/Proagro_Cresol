@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-
-    <div style="max-width: 1920px; margin: 0;padding: 0;box-sizing: border-box;overflow-x: hidden; min-height: 100vh;
+<div style="    margin: 0;padding: 0;box-sizing: content-box;overflow-x: hidden; min-height: 100vh;
                 background-image:url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/BG%402x.png);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -112,7 +100,7 @@
                             background-size: cover;
                             background-position: center;
                             ">
-                            <div style="display: flex; flex-wrap: wrap; justify-content:space-around;">
+                            <div style="display: flex; flex-wrap: wrap; justify-content:space-around;margin: auto;">
                                 <div style="display: flex;flex-wrap: wrap;flex-direction: column;padding: 2rem;">
                                     <div style="display: flex; flex-wrap: wrap;align-items: center; justify-content: space-between;padding-bottom: 15%;padding-top: 2rem;">
                                         <div style="background-color: #F58220; width: 5rem;height: 0.2rem;"></div>
@@ -140,9 +128,9 @@
                                         <div style="background-color: #F58220; width: 5rem;height: 0.2rem;"></div>
                                     </div>
                                 </div>
-                                <div id="video" style="display: none;justify-content: space-around; border-radius: 25px; ">
-                                    <iframe src="https://player.vimeo.com/video/666134897?h=52322d2d7c" max-width="700" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen
-                                            style="padding-bottom: 1rem; border-radius: 15px;"></iframe>
+                                <div id="video" style="display: none; padding: 2% 0 ; width: 500px; min-height: 330px;">
+                                    <iframe src="https://player.vimeo.com/video/666134897?h=52322d2d7c" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="border-radius: 30px;"> 
+                                        </iframe>
                                 </div>
                             </div>
             
@@ -153,7 +141,7 @@
                 <!--E-Book Block-->
                 <div    class="blockE-Book"
                         style="background-image: url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/BG-Ebook.png);
-                                border: 0.4rem solid #005C46;
+                                border: 0.3rem solid #005C46;
                                 border-radius: 25px;
                                 box-shadow: 0px 3px 30px 5px rgba(0, 0, 0, 0.5);
                                 display: flex;
@@ -265,9 +253,9 @@
                             </div>
                     </div>
 
-    </div>
-    </body>
-    <script>
+</div>
+    
+<script>
         //IntroButton
         var buttonModBarIntro = window.document.getElementById ('hoverButtonModBarIntro')
 
@@ -414,9 +402,9 @@
         let showVideo = document.querySelector ('#videoButton');
         let video = document.querySelector ('#video');
 
-        const displayNone = "none";
+        
         const displayFlex = "flex";
-        const displayGrid = "grid";
+        
         
         //ShowVideo
         //Ebookbutton
@@ -475,6 +463,5 @@
             elem.href = 'https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/style.css';
             document.head.appendChild(elem);
         //PuxarCSS
-    </script>
-    </body>
-    </html>
+</script>
+    
