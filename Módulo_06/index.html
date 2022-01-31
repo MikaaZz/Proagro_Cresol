@@ -45,10 +45,15 @@
                                 onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/course/view.php?id=1490&section=6';"
                                 onmouseenter="hoverInMod05()"
                                 onmouseleave="hoverOutMod05()"><h3 style="color: white; padding-top: 1%">Módulo 05</h3> </div>
+                                <div id="hoverButtonMC" style="width: 140px;height: 50px;background-color: #F58220;border-radius: 15px;border: none; margin: 0.5%;cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 15px;"
+                                onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/mod/page/view.php?id=38145';"
+                                onmouseenter="hoverInMod06()"
+                                onmouseleave="hoverOutMod06()"><h3 style="color: white; text-align: center;padding-top: 1%;">Material Complementar</h3> </div>  
                                 <div id="hoverButtonMod06" style="width: 140px;height: 50px;background-color: #F58220;border-radius: 15px;border: none; margin: 0.5%;cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 15px;"
                                  onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/course/view.php?id=1490&section=7';"
                                  onmouseenter="hoverInMod06()"
-                                 onmouseleave="hoverOutMod06()"><h3 style="color: white; padding-top: 1%">Módulo 06</h3> </div>    
+                                 onmouseleave="hoverOutMod06()"><h3 style="color: white; padding-top: 1%">Módulo 06</h3> </div>
+                                       
                     </div>
                 </div>
                 <div style="background-image: url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9978/Mod06.png);
@@ -96,7 +101,7 @@
                                 align-items: center;
                                 font-size: 15px;
                                 margin-bottom: 4%;"
-                                onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/mod/forum/view.php?id=38124';"
+                                onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/mod/page/view.php?id=381444';"
                                 onmouseenter="hoverInForum()"
                                 onmouseleave="hoverOutForum()">
                                 <h3 style="color: #005C46; text-align: center;padding-top: 1%;">Pesquisa do curso</h3>
@@ -155,7 +160,7 @@
             ">
                 <!--ButtonPreviousDIV-->
                 <div id="hoverButtonNavBarPrevious"
-                    onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/course/view.php?id=1490&section=6';"
+                    onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/course/view.php?id=1490&section=7';"
                     onmouseenter="hoverInPrevious()"
                     onmouseleave="hoverOutPrevious()"
                     style="width: 250px; height: 60px;
@@ -349,4 +354,21 @@
         buttonAvaliação.style.fontSize = "15px";
     }
     //ForumButton
+    //MaterialComplementar
+var buttonMC = window.document.getElementById ('hoverButtonMC')
+
+function hoverInMod06(){
+    buttonMC.style.transition = "all 0.2s"
+    buttonMC.style.height = "54px";
+    buttonMC.style.width = "155px";
+    buttonMC.style.fontSize = "16px";
+    
+}
+function hoverOutMod06(){
+    buttonMC.style.transition = "all 0.2s"
+    buttonMC.style.height = "50px";
+    buttonMC.style.width = "140px";
+    buttonMC.style.fontSize = "15px";
+}
+//MaterialComplementar
 </script>

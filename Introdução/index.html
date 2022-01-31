@@ -45,10 +45,15 @@
                                 onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/course/view.php?id=1490&section=6';"
                                 onmouseenter="hoverInMod05()"
                                 onmouseleave="hoverOutMod05()"><h3 style="color: white; padding-top: 1%">Módulo 05</h3> </div>
-                                <div id="hoverButtonMod06" style="width: 140px;height: 50px;background-color: #F58220;border-radius: 15px;border: none; margin: 0.5%;cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 15px;"
+                                <div id="hoverButtonMC" style="width: 140px;height: 50px;background-color: #F58220;border-radius: 15px;border: none; margin: 0.5%;cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 15px;"
+                                 onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/mod/page/view.php?id=38145';"
+                                 onmouseenter="hoverInMod06()"
+                                 onmouseleave="hoverOutMod06()"><h3 style="color: white; text-align: center; padding-top: 1%;">Material Complementar</h3> </div>
+                                 <div id="hoverButtonMod06" style="width: 140px;height: 50px;background-color: #F58220;border-radius: 15px;border: none; margin: 0.5%;cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 15px;"
                                  onclick="document.location.href='https://ead.cresolinstituto.org.br/corporativo/course/view.php?id=1490&section=7';"
                                  onmouseenter="hoverInMod06()"
-                                 onmouseleave="hoverOutMod06()"><h3 style="color: white; padding-top: 1%">Módulo 06</h3> </div>    
+                                 onmouseleave="hoverOutMod06()"><h3 style="color: white; padding-top: 1%">Módulo 06</h3> </div>
+                                     
                     </div>
                 </div>
                 <div style="background-image: url(https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/IntroV2.png);
@@ -193,11 +198,11 @@
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;">
-                            <h3 style="color: white; text-align: center;padding-top:4% ;">CONHEÇA O TUTOR!</h3>
+                            <h3 style="color: white; text-align: center;padding-top:4% ;">CONHEÇA A TUTORA!</h3>
                             <div style="background-color:white; height:0.3rem;width: 3rem;margin: 2% auto 2% auto;border-radius: 20px;"></div>
                             <div style="display: flex;flex-wrap: wrap;justify-content: center; margin: 2%;"><img src="https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/FotoPersonagem.png" alt="Foto-Tutora" style="height: 200px;width: 160px;border-radius: 15px;"></div>
                             <h3 style="color: white;font-weight: bold; text-align: center;"><strong>Olá, eu me chamo</strong> Adrieli Cassia Borges</h3>
-                            <p style="color: white; text-align: center;">Sou tutora do curso. Manter minhas tarefas organizadas é essencial para a assertividade do meu trabalho.</p>
+                            <p style="color: white; text-align: center;">Sou a tutora do curso. Manter minhas tarefas organizadas é essencial para a assertividade do meu trabalho.</p>
                             <p style="color: white; text-align: center;">Sou graduanda em Ciências Econômicas pela Universidade Estadual do Oeste do Paraná - UNIOESTE.</p>
                             <p style="color: white; text-align: center;">Estou na Cresol desde 2017, onde atuo como Analista de Proagro no setor de Ciclo de Crédito.<br>Irei acompanhá-lo nos estudos.</p>
                             <p  style="color: white; text-align: center;padding-bottom: 4%;"><strong>Poste aqui suas dúvidas e contribuições, estou disponível para ajudar!</strong></p>
@@ -401,7 +406,7 @@
 
         let showVideo = document.querySelector ('#videoButton');
         let video = document.querySelector ('#video');
-
+        
         
         const displayFlex = "flex";
         
@@ -463,5 +468,21 @@
             elem.href = 'https://ead.cresolinstituto.org.br/corporativo/pluginfile.php/112387/course/section/9966/style.css';
             document.head.appendChild(elem);
         //PuxarCSS
-</script>
+        //MaterialComplementar
+var buttonMC = window.document.getElementById ('hoverButtonMC')
+
+function hoverInMod06(){
+    buttonMC.style.transition = "all 0.2s"
+    buttonMC.style.height = "54px";
+    buttonMC.style.width = "155px";
+    buttonMC.style.fontSize = "16px";
     
+}
+function hoverOutMod06(){
+    buttonMC.style.transition = "all 0.2s"
+    buttonMC.style.height = "50px";
+    buttonMC.style.width = "140px";
+    buttonMC.style.fontSize = "15px";
+}
+//MaterialComplementar
+</script>
